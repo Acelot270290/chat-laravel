@@ -19,7 +19,7 @@ class CreateConversasTable extends Migration
             $table->unsignedBigInteger('recebidas_id');
             $table->foreign('enviados_id')->references('id')->on('users');
             $table->foreign('recebidas_id')->references('id')->on('users');
-            $table->timestamp('ultima_menagem')->nullable();
+            $table->timestamp('ultima_mensagem')->nullable();
             $table->timestamps();
         });
     }
