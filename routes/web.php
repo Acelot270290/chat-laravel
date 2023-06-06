@@ -19,10 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//liveware chats
+//livewire routes
 
 Route::get('/users',CreateChat::class)->name('users');
 Route::get('/chat{key?}',Main::class)->name('chat');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
